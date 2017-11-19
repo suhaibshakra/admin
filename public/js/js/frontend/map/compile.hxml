@@ -1,0 +1,4 @@
+-main com.trackware.Main
+-lib jQueryExtern
+-debug
+-js "C:/Users/Samir Sabri/Documents/elixir/trackware/web/static/js/haxe.js"

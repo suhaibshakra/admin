@@ -1,0 +1,19 @@
+diff a/public/csv/csv-upload.js b/public/csv/csv-upload.js	(rejected hunks)
+@@ -36,14 +36,15 @@
+             //console.log('Success ' + resp.config.data.file.name + 'uploaded. Response: ' + resp.data);
+             // now, I have to connect to progress topic, and listen for feedback!
+             var progress_topic= resp.data.process_name;
+-            progress_topic= progress_topic.replace("_", ":");
++
+             var channel = $scope.websocket.channel(progress_topic);
+ 
+             var join= channel.join();
+ 
+             join.receive("ok", function(message){
+                 console.log(message, progress_topic);
+-
++                //start the stream!
++                channel.push("start_stream", {"process_name":progress_topic});
+             });
+ 
+             join.receive("error", function(error){
