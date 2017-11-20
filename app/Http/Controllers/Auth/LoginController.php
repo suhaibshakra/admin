@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\DB;
 
 
 class LoginController extends Controller
@@ -53,7 +54,9 @@ class LoginController extends Controller
       if(isset($request['email'])){
            $email = strtolower($email);
       }
-      $admin = \App\Model\User::where('email',$email) ->first();
+      // $admin = DB::table('users')->where('email',$email) ->first();
+       $hashed = Hash::make('password');
+       dd($hashed);
       if (Hash::check($request['password'], $admin->password)) {
           // The passwords match...
           \Session::put('admin_id', 1);
