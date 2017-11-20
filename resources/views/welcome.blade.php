@@ -11,16 +11,16 @@
     <title>INSPINIA - Landing Page</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ config('voyager.path') }}/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Animation CSS -->
-    <link href="css/animate.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="{{ config('voyager.path') }}/css/animate.css" rel="stylesheet">
+    <link href="{{ config('voyager.path') }}/font-awesome/css/font-awesome.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
-    
-    <link rel="stylesheet" href="css/flipclock.css">
+    <link href="{{ config('voyager.path') }}/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="{{ config('voyager.path') }}/css/flipclock.css">
 </head>
 <body id="page-top" class="landing-page no-skin-config">
 <div class="navbar-wrapper">
@@ -632,16 +632,16 @@
 <div id="getting-started"></div>
 
 <!-- Mainly scripts -->
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/plugins/metisMenu/jquery.metisMenu.js"></script>
-<script src="js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+<script src="{{ config('voyager.path') }}/js/jquery-3.1.1.min.js"></script>
+<script src="{{ config('voyager.path') }}/js/bootstrap.min.js"></script>
+<script src="{{ config('voyager.path') }}/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+<script src="{{ config('voyager.path') }}/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 
 <!-- Custom and plugin javascript -->
-<script src="js/inspinia.js"></script>
-<script src="js/plugins/pace/pace.min.js"></script>
-<script src="js/plugins/wow/wow.min.js"></script>
-<script src="js/flipclock.js"></script>
+<script src="{{ config('voyager.path') }}/js/inspinia.js"></script>
+<script src="{{ config('voyager.path') }}/js/plugins/pace/pace.min.js"></script>
+<script src="{{ config('voyager.path') }}/js/plugins/wow/wow.min.js"></script>
+<script src="{{ config('voyager.path') }}/js/flipclock.js"></script>
 
 <script>
 var clock;
@@ -662,17 +662,17 @@ var clock;
             event.preventDefault();
             $("#navbar").collapse('hide');
         });
-        
-        
+
+
             // Grab the current date
             var currentDate = new Date();
-        
+
             // Set some date in the future. In this case, it's always Jan 1
             var futureDate  = new Date(currentDate.getFullYear() + 1, 0, 1);
-        
+
             // Calculate the difference in seconds between the future and current date
             var diff = futureDate.getTime() / 1000 - currentDate.getTime() / 1000;
-        
+
             // Instantiate a coutdown FlipClock
             clock = $('.clock').FlipClock(diff, {
               clockFace: 'DailyCounter',

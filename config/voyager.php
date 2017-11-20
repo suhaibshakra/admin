@@ -219,4 +219,6 @@ return [
          'zoom' => env('GOOGLE_MAPS_DEFAULT_ZOOM', 11),
      ],
 
+     'path' => '/public',
+
 ];

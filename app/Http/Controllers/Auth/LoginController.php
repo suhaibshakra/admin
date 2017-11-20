@@ -4,6 +4,9 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Hash;
+
 
 class LoginController extends Controller
 {
@@ -35,5 +38,28 @@ class LoginController extends Controller
     public function __construct()
     {
         $this->middleware('guest', ['except' => 'logout']);
+    }
+
+    public function showLogin()
+    {
+        // show the form
+          return view('login');
+        // return View::make('login');
+    }
+
+    public function doLogin(Request $request)
+    {
+      $email = $request->request->get('email');
+      if(isset($request['email'])){
+           $email = strtolower($email);
+      }
+      $admin = \App\Model\User::where('email',$email) ->first();
+      if (Hash::check($request['password'], $admin->password)) {
+          // The passwords match...
+          \Session::put('admin_id', 1);
+          dd($request->all());
+      }
+
+
     }
 }

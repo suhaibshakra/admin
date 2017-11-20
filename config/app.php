@@ -51,7 +51,9 @@ return [
     |
     */
 
-    'url' => 'https://suhaib-project-test.000webhostapp.com/',
+    // 'url' => 'https://suhaib-project-test.000webhostapp.com/',
+    'url' => 'localhost',
+
 
     /*
     |--------------------------------------------------------------------------
