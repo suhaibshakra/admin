@@ -33,7 +33,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand" href="index.html">  <img src="img/logo (1).png" alt="dashboard" style="width: 115px;" class="img-responsive"></a>
+                    <a class="navbar-brand" href="index.html">  <img src="{{ config('voyager.path') }}/img/logo (1).png" alt="dashboard" style="width: 115px;" class="img-responsive"></a>
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav navbar-right">
@@ -68,7 +68,7 @@
                     </p>
                 </div>
                 <div class="carousel-image wow zoomIn">
-                    <img src="img/landing/laptop.png" alt="laptop"/>
+                    <img src="{{ config('voyager.path') }}/img/landing/laptop.png" alt="laptop"/>
                 </div>
             </div>
             <!-- Set background for slide in css -->
@@ -127,55 +127,58 @@
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1>Over 40+ unique view<br/> <span class="navy"> with many custom components</span> </h1>
+            <h1>The importance of the project<br/> <span class="navy"> with many custom components</span> </h1>
             <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
         </div>
     </div>
     <div class="row">
         <div class="col-md-3 text-center wow fadeInLeft">
             <div>
-                <i class="fa fa-mobile features-icon"></i>
-                <h2>Full responsive</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                <i class="fa fa-handshake-o features-icon"></i>
+                <h2>Approval</h2>
+                <p>This project has received preliminary approval from some European cities to participate and many international factories and innovators around the world.</p>
             </div>
             <div class="m-t-lg">
                 <i class="fa fa-bar-chart features-icon"></i>
-                <h2>6 Charts Library</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                <h2>Investment</h2>
+                <p>Investment of the product of the minds of the development of the economy, and the industry of an advanced industrial state, when the project is established on the land of this country.</p>
             </div>
         </div>
         <div class="col-md-6 text-center  wow zoomIn">
-            <img src="img/landing/perspective.png" alt="dashboard" class="img-responsive">
+            <img src="{{ config('voyager.path') }}/img/landing/perspective.png" alt="dashboard" class="img-responsive">
         </div>
         <div class="col-md-3 text-center wow fadeInRight">
             <div>
                 <i class="fa fa-envelope features-icon"></i>
-                <h2>Mail pages</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                <h2>fa fa-plane</h2>
+                <p>An innovative way to shop and tourism in one place at competitive prices.</p>
             </div>
             <div class="m-t-lg">
-                <i class="fa fa-google features-icon"></i>
-                <h2>AngularJS version</h2>
-                <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus.</p>
+                <i class="fa fa-globe features-icon"></i>
+                <h2>Integrated Commercial</h2>
+                <p>An integrated commercial, industrial, scientific and tourism city that links world markets and attracts investors in innovative and unique ways.</p>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-lg-12 text-center">
             <div class="navy-line"></div>
-            <h1>Discover great feautres</h1>
-            <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. </p>
+            <h1>A Few Words About Us  </h1>
         </div>
     </div>
     <div class="row features-block">
         <div class="col-lg-6 features-text wow fadeInLeft">
-            <small>INSPINIA</small>
-            <h2>Perfectly designed </h2>
-            <p>INSPINIA Admin Theme is a premium admin dashboard template with flat design concept. It is fully responsive admin dashboard template built with Bootstrap 3+ Framework, HTML5 and CSS3, Media query. It has a huge collection of reusable UI components and integrated with latest jQuery plugins.</p>
-            <a href="" class="btn btn-primary">Learn more</a>
+            <small>Arab-Patents</small>
+            <h2>A Few Words About Us  </h2>
+            <p>
+              We are a group aimed at developing an economic system in which qualitative, qualitative and creative science represents the main production element and the driving force behind the production of the revolution to create an effective "creative relationship" to attract investors and build innovative projects to renew development strategies and provide better access to sustainable development through the knowledge economy One of the fastest growing sectors in the world economy, the most productive in terms of productivity and material return, the creation of jobs and the opening of export horizons, relying on two main elements:
+              Building and successful distribution of human potential
+              To achieve international partnerships and share experiences.
+            </p>
+            <a href="http://www.arabpatents.com/" class="btn btn-primary">Learn more</a>
         </div>
         <div class="col-lg-6 text-right wow fadeInRight">
-            <img src="img/landing/dashboard.png" alt="dashboard" class="img-responsive pull-right">
+            <img src="{{ config('voyager.path') }}/img/landing/dashboard.png" alt="dashboard" class="img-responsive pull-right">
         </div>
     </div>
 </section>
@@ -207,7 +210,7 @@
             </div>
             <div class="col-sm-4">
                 <div class="team-member wow zoomIn">
-                    <img src="img/landing/avatar1.jpg" class="img-responsive img-circle" alt="">
+                    <img src="{{ config('voyager.path') }}/img/landing/avatar1.jpg" class="img-responsive img-circle" alt="">
                     <h4><span class="navy">John</span> Novak</h4>
                     <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
                     <ul class="list-inline social-icon">
@@ -222,7 +225,7 @@
             </div>
             <div class="col-sm-4 wow fadeInRight">
                 <div class="team-member">
-                    <img src="img/landing/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
+                    <img src="{{ config('voyager.path') }}/img/landing/avatar2.jpg" class="img-responsive img-circle img-small" alt="">
                     <h4><span class="navy">Peter</span> Johnson</h4>
                     <p>Lorem ipsum dolor sit amet, illum fastidii dissentias quo ne. Sea ne sint animal iisque, nam an soluta sensibus.</p>
                     <ul class="list-inline social-icon">
@@ -261,7 +264,7 @@
                 <a href="" class="btn btn-primary">Learn more</a>
             </div>
             <div class="col-lg-6 text-right m-t-n-lg wow zoomIn">
-                <img src="img/landing/iphone.jpg" class="img-responsive" alt="dashboard">
+                <img src="{{ config('voyager.path') }}/img/landing/iphone.jpg" class="img-responsive" alt="dashboard">
             </div>
             <div class="col-lg-3 features-text text-right wow fadeInRight">
                 <small>INSPINIA</small>
@@ -372,7 +375,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="img/landing/avatar3.jpg">
+                        <img alt="image" src="{{ config('voyager.path') }}/img/landing/avatar3.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
@@ -389,7 +392,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="img/landing/avatar1.jpg">
+                        <img alt="image" src="{{ config('voyager.path') }}/img/landing/avatar1.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
@@ -406,7 +409,7 @@
                 </div>
                 <div class="comments-avatar">
                     <a href="" class="pull-left">
-                        <img alt="image" src="img/landing/avatar2.jpg">
+                        <img alt="image" src="{{ config('voyager.path') }}/img/landing/avatar2.jpg">
                     </a>
                     <div class="media-body">
                         <div class="commens-name">
