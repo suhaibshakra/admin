@@ -283,7 +283,7 @@
               </div>
           </div>
           <div class="col-md-6 text-center  wow zoomIn">
-              <img src="{{ config('voyager.path') }}/img/landing/footer-logo.png" id="logo" style="margin-top: 100px;margin-left: 100px;" alt="dashboard" class="img-responsive">
+              <img src="{{ config('voyager.path') }}/img/landing/footer-logo.png" id="logo" style="margin-top: 10ل0px;margin-left: 100px;" alt="dashboard" class="img-responsive">
           </div>
           <div class="col-md-3 text-center wow fadeInRight">
               <div>
